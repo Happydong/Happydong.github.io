@@ -68,7 +68,7 @@
 <link href="/css/main.css?v=5.0.1" rel="stylesheet" type="text/css" />
 
 
-  <meta name="keywords" content="Hexo, NexT" />
+  <meta name="keywords" content="Python,爬虫,NBA," />
 
 
 
@@ -84,15 +84,28 @@
 
 
 
-<meta name="description" content="时间如梭，岁月如水，美好的就是当下！">
-<meta property="og:type" content="website">
-<meta property="og:title" content="Happydong's Blog">
-<meta property="og:url" content="https://happydong.github.io/index.html">
+<meta name="description" content="爬取目标：1.爬取NBA2017-2018赛季 球队的球赛数据
+2.并保存到.csv 文件中
+目标站：http://china.nba.com难点：
+经分析得知，要获取的数据是动态生产的，经过抓包得到目标链接的组成方式为：targeurl = “http://china.nba.com/static/data/team/schedule“+box_name+”.json” 
+json格式数据提取的">
+<meta property="og:type" content="article">
+<meta property="og:title" content="Python爬取NBA2017-2018赛季数据实战">
+<meta property="og:url" content="https://happydong.github.io/2018/04/28/Python爬取NBA2017-2018赛季数据实战/index.html">
 <meta property="og:site_name" content="Happydong's Blog">
-<meta property="og:description" content="时间如梭，岁月如水，美好的就是当下！">
+<meta property="og:description" content="爬取目标：1.爬取NBA2017-2018赛季 球队的球赛数据
+2.并保存到.csv 文件中
+目标站：http://china.nba.com难点：
+经分析得知，要获取的数据是动态生产的，经过抓包得到目标链接的组成方式为：targeurl = “http://china.nba.com/static/data/team/schedule“+box_name+”.json” 
+json格式数据提取的">
+<meta property="og:updated_time" content="2018-04-28T04:39:27.000Z">
 <meta name="twitter:card" content="summary">
-<meta name="twitter:title" content="Happydong's Blog">
-<meta name="twitter:description" content="时间如梭，岁月如水，美好的就是当下！">
+<meta name="twitter:title" content="Python爬取NBA2017-2018赛季数据实战">
+<meta name="twitter:description" content="爬取目标：1.爬取NBA2017-2018赛季 球队的球赛数据
+2.并保存到.csv 文件中
+目标站：http://china.nba.com难点：
+经分析得知，要获取的数据是动态生产的，经过抓包得到目标链接的组成方式为：targeurl = “http://china.nba.com/static/data/team/schedule“+box_name+”.json” 
+json格式数据提取的">
 
 
 
@@ -110,7 +123,7 @@
   };
 </script>
 
-  <title> Happydong's Blog </title>
+  <title> Python爬取NBA2017-2018赛季数据实战 | Happydong's Blog </title>
 </head>
 
 <body itemscope itemtype="http://schema.org/WebPage" lang="zh-Hans">
@@ -141,9 +154,7 @@
     
   
 
-  <div class="container one-collumn sidebar-position-left 
-   page-home 
- ">
+  <div class="container one-collumn sidebar-position-left page-post-detail ">
     <div class="headband"></div>
 
     <header id="header" class="header" itemscope itemtype="http://schema.org/WPHeader">
@@ -240,9 +251,9 @@
         <div class="content-wrap">
           <div id="content" class="content">
             
-  <section id="posts" class="posts-expand">
+
+  <div id="posts" class="posts-expand">
     
-      
 
   
   
@@ -262,10 +273,7 @@
             
             
               
-                
-                <a class="post-title-link" href="/2018/04/28/Python爬取NBA2017-2018赛季数据实战/" itemprop="url">
-                  Python爬取NBA2017-2018赛季数据实战
-                </a>
+                Python爬取NBA2017-2018赛季数据实战
               
             
           </h1>
@@ -331,9 +339,7 @@
       
 
       
-        
-          
-            <h4 id="爬取目标："><a href="#爬取目标：" class="headerlink" title="爬取目标："></a>爬取目标：</h4><pre><code>1.爬取NBA2017-2018赛季 球队的球赛数据
+        <h4 id="爬取目标："><a href="#爬取目标：" class="headerlink" title="爬取目标："></a>爬取目标：</h4><pre><code>1.爬取NBA2017-2018赛季 球队的球赛数据
 2.并保存到.csv 文件中
 </code></pre><h5 id="目标站：http-china-nba-com"><a href="#目标站：http-china-nba-com" class="headerlink" title="目标站：http://china.nba.com"></a>目标站：<a href="http://china.nba.com" target="_blank" rel="external">http://china.nba.com</a></h5><h6 id="难点："><a href="#难点：" class="headerlink" title="难点："></a>难点：</h6><ul>
 <li>经分析得知，要获取的数据是动态生产的，经过抓包得到目标链接的组成方式为：targe<em>url = “<a href="http://china.nba.com/static/data/team/schedule" target="_blank" rel="external">http://china.nba.com/static/data/team/schedule</a></em>“+box_name+”.json” </li>
@@ -343,397 +349,97 @@
 </li>
 </ul>
 
-          
+      
+    </div>
+
+    <div>
+      
         
       
     </div>
 
     <div>
       
+        
+  <div style="padding: 10px 0; margin: 20px auto; width: 90%; text-align: center;">
+    <div>坚持原创技术分享，您的支持将鼓励我继续创作！</div>
+    <button id="rewardButton" disable="enable" onclick="var qr = document.getElementById('QR'); if (qr.style.display === 'none') {qr.style.display='block';} else {qr.style.display='none'}">
+      <span>赏</span>
+    </button>
+    <div id="QR" style="display: none;">
+      
+      
+        <div id="alipay" style="display: inline-block">
+          <img id="alipay_qr" src="/images/alipay.png" alt="Happydong Alipay"/>
+          <p>支付宝打赏</p>
+        </div>
+      
     </div>
+  </div>
 
-    <div>
+
       
     </div>
 
     <footer class="post-footer">
       
-
-      
-
-      
-      
-        <div class="post-eof"></div>
-      
-    </footer>
-  </article>
-
-
-    
-      
-
-  
-  
-
-  
-  
-  
-
-  <article class="post post-type-normal " itemscope itemtype="http://schema.org/Article">
-
-    
-      <header class="post-header">
-
-        
-        
-          <h1 class="post-title" itemprop="name headline">
-            
-            
-              
-                
-                <a class="post-title-link" href="/2017/08/17/高效学习方法/" itemprop="url">
-                  高效学习方法
-                </a>
-              
-            
-          </h1>
-        
-
-        <div class="post-meta">
-          <span class="post-time">
-            <span class="post-meta-item-icon">
-              <i class="fa fa-calendar-o"></i>
-            </span>
-            <span class="post-meta-item-text">发表于</span>
-            <time itemprop="dateCreated" datetime="2017-08-17T14:35:39+08:00" content="2017-08-17">
-              2017-08-17
-            </time>
-          </span>
-
+        <div class="post-tags">
           
-            <span class="post-category" >
-              &nbsp; | &nbsp;
-              <span class="post-meta-item-icon">
-                <i class="fa fa-folder-o"></i>
-              </span>
-              <span class="post-meta-item-text">分类于</span>
-              
-                <span itemprop="about" itemscope itemtype="https://schema.org/Thing">
-                  <a href="/categories/学习方法/" itemprop="url" rel="index">
-                    <span itemprop="name">学习方法</span>
-                  </a>
-                </span>
-
-                
-                
-
-              
-            </span>
+            <a href="/tags/Python/" rel="tag">#Python</a>
           
-
+            <a href="/tags/爬虫/" rel="tag">#爬虫</a>
           
-            
-              <span class="post-comments-count">
-                &nbsp; | &nbsp;
-                <a href="/2017/08/17/高效学习方法/#comments" itemprop="discussionUrl">
-                  <span class="post-comments-count ds-thread-count" data-thread-key="2017/08/17/高效学习方法/" itemprop="commentsCount"></span>
-                </a>
-              </span>
-            
-          
-
-          
-
-          
-          
-
+            <a href="/tags/NBA/" rel="tag">#NBA</a>
           
         </div>
-      </header>
-    
-
-
-    <div class="post-body" itemprop="articleBody">
-
-      
       
 
       
-        
-          <h4 id="导语："><a href="#导语：" class="headerlink" title="导语："></a>导语：</h4><blockquote>
-<p>这是在读斯科特·杨的《如何高效学习》书的读书笔记，希望对自己以后的学习生涯有所帮助！</p>
-</blockquote>
-<h2 id="Ⅰ-不懂学习，注定一无所成"><a href="#Ⅰ-不懂学习，注定一无所成" class="headerlink" title="Ⅰ. 不懂学习，注定一无所成"></a>Ⅰ. 不懂学习，注定一无所成</h2><p>提醒我们无论是在上学时代还是职场工作中，都要注意方式方法，不能蛮干，要学习技巧，就如书中所讲 </p>
-<blockquote>
-<p>人进入社会后，混得好不好，能不能越来越值钱，最重要的其实是学习力。</p>
-</blockquote>
-<p><img src="https://i.loli.net/2017/08/17/59954919e62a6.png" alt=""></p>
-          <div class="post-more-link text-center">
-            <a class="btn" href="/2017/08/17/高效学习方法/#more" rel="contents">
-              阅读全文 &raquo;
-            </a>
+        <div class="post-nav">
+          <div class="post-nav-next post-nav-item">
+            
+              <a href="/2017/08/17/高效学习方法/" rel="next" title="高效学习方法">
+                <i class="fa fa-chevron-left"></i> 高效学习方法
+              </a>
+            
           </div>
-        
-      
-    </div>
 
-    <div>
-      
-    </div>
-
-    <div>
-      
-    </div>
-
-    <footer class="post-footer">
-      
-
-      
-
-      
-      
-        <div class="post-eof"></div>
-      
-    </footer>
-  </article>
-
-
-    
-      
-
-  
-  
-
-  
-  
-  
-
-  <article class="post post-type-normal " itemscope itemtype="http://schema.org/Article">
-
-    
-      <header class="post-header">
-
-        
-        
-          <h1 class="post-title" itemprop="name headline">
+          <div class="post-nav-prev post-nav-item">
             
-            
-              
-                
-                <a class="post-title-link" href="/2017/01/04/我的Blog诞生记/" itemprop="url">
-                  我的Blog诞生记
-                </a>
-              
-            
-          </h1>
-        
-
-        <div class="post-meta">
-          <span class="post-time">
-            <span class="post-meta-item-icon">
-              <i class="fa fa-calendar-o"></i>
-            </span>
-            <span class="post-meta-item-text">发表于</span>
-            <time itemprop="dateCreated" datetime="2017-01-04T12:16:36+08:00" content="2017-01-04">
-              2017-01-04
-            </time>
-          </span>
-
-          
-            <span class="post-category" >
-              &nbsp; | &nbsp;
-              <span class="post-meta-item-icon">
-                <i class="fa fa-folder-o"></i>
-              </span>
-              <span class="post-meta-item-text">分类于</span>
-              
-                <span itemprop="about" itemscope itemtype="https://schema.org/Thing">
-                  <a href="/categories/搭建博客/" itemprop="url" rel="index">
-                    <span itemprop="name">搭建博客</span>
-                  </a>
-                </span>
-
-                
-                
-
-              
-            </span>
-          
-
-          
-            
-              <span class="post-comments-count">
-                &nbsp; | &nbsp;
-                <a href="/2017/01/04/我的Blog诞生记/#comments" itemprop="discussionUrl">
-                  <span class="post-comments-count ds-thread-count" data-thread-key="2017/01/04/我的Blog诞生记/" itemprop="commentsCount"></span>
-                </a>
-              </span>
-            
-          
-
-          
-
-          
-          
-
-          
+          </div>
         </div>
-      </header>
-    
-
-
-    <div class="post-body" itemprop="articleBody">
-
-      
       
 
       
-        
-          <p><em>经过半天的努力终于搞定，基于hexo + github 的博客算是基本实现。</em></p>
-<h3 id="具体过程如下："><a href="#具体过程如下：" class="headerlink" title="具体过程如下："></a>具体过程如下：</h3><h4 id="1-首先安装-git-和-node"><a href="#1-首先安装-git-和-node" class="headerlink" title="1.首先安装 git 和 node"></a>1.首先安装 <strong><a href="http://www.liaoxuefeng.com/wiki/0013739516305929606dd18361248578c67b8067c8c017b000/00137396287703354d8c6c01c904c7d9ff056ae23da865a000/">git</a> 和 <a href="http://nodejs.cn/">node</a></strong></h4><p>自己动手查找网上好多资料的说。</p>
-<h4 id="2-注册github账户"><a href="#2-注册github账户" class="headerlink" title="2.注册github账户"></a>2.注册<a href="https://github.com">github</a>账户</h4><p>创建空的repositories，项目名称必须是 <strong>【你的用户名】.github.io</strong>。</p>
-<h4 id="3-安装-Hexo"><a href="#3-安装-Hexo" class="headerlink" title="3.安装 Hexo"></a>3.安装 Hexo</h4>
-          <div class="post-more-link text-center">
-            <a class="btn" href="/2017/01/04/我的Blog诞生记/#more" rel="contents">
-              阅读全文 &raquo;
-            </a>
-          </div>
-        
-      
-    </div>
-
-    <div>
-      
-    </div>
-
-    <div>
-      
-    </div>
-
-    <footer class="post-footer">
-      
-
-      
-
-      
-      
-        <div class="post-eof"></div>
       
     </footer>
   </article>
 
 
-    
+
+    <div class="post-spread">
       
+        <div class="ds-share flat" data-thread-key="2018/04/28/Python爬取NBA2017-2018赛季数据实战/"
+     data-title="Python爬取NBA2017-2018赛季数据实战"
+     data-content=""
+     data-url="https://happydong.github.io/2018/04/28/Python爬取NBA2017-2018赛季数据实战/">
+  <div class="ds-share-inline">
+    <ul  class="ds-share-icons-16">
 
-  
-  
+      <li data-toggle="ds-share-icons-more"><a class="ds-more" href="javascript:void(0);">分享到：</a></li>
+      <li><a class="ds-weibo" href="javascript:void(0);" data-service="weibo">微博</a></li>
+      <li><a class="ds-qzone" href="javascript:void(0);" data-service="qzone">QQ空间</a></li>
+      <li><a class="ds-qqt" href="javascript:void(0);" data-service="qqt">腾讯微博</a></li>
+      <li><a class="ds-wechat" href="javascript:void(0);" data-service="wechat">微信</a></li>
 
-  
-  
-  
-
-  <article class="post post-type-normal " itemscope itemtype="http://schema.org/Article">
-
-    
-      <header class="post-header">
-
-        
-        
-          <h1 class="post-title" itemprop="name headline">
-            
-            
-              
-                
-                <a class="post-title-link" href="/2017/01/03/hello-world/" itemprop="url">
-                  Hello World
-                </a>
-              
-            
-          </h1>
-        
-
-        <div class="post-meta">
-          <span class="post-time">
-            <span class="post-meta-item-icon">
-              <i class="fa fa-calendar-o"></i>
-            </span>
-            <span class="post-meta-item-text">发表于</span>
-            <time itemprop="dateCreated" datetime="2017-01-03T17:48:33+08:00" content="2017-01-03">
-              2017-01-03
-            </time>
-          </span>
-
-          
-
-          
-            
-              <span class="post-comments-count">
-                &nbsp; | &nbsp;
-                <a href="/2017/01/03/hello-world/#comments" itemprop="discussionUrl">
-                  <span class="post-comments-count ds-thread-count" data-thread-key="2017/01/03/hello-world/" itemprop="commentsCount"></span>
-                </a>
-              </span>
-            
-          
-
-          
-
-          
-          
-
-          
-        </div>
-      </header>
-    
-
-
-    <div class="post-body" itemprop="articleBody">
-
-      
-      
-
-      
-        
-          <p>Welcome to <a href="https://hexo.io/">Hexo</a>! This is your very first post. Check <a href="https://hexo.io/docs/">documentation</a> for more info. If you get any problems when using Hexo, you can find the answer in <a href="https://hexo.io/docs/troubleshooting.html">troubleshooting</a> or you can ask me on <a href="https://github.com/hexojs/hexo/issues">GitHub</a>.</p>
-<h2 id="Quick-Start"><a href="#Quick-Start" class="headerlink" title="Quick Start"></a>Quick Start</h2><h3 id="Create-a-new-post"><a href="#Create-a-new-post" class="headerlink" title="Create a new post"></a>Create a new post</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">$ hexo new <span class="string">"My New Post"</span></div></pre></td></tr></table></figure>
-<p>More info: <a href="https://hexo.io/docs/writing.html">Writing</a></p>
-<h3 id="Run-server"><a href="#Run-server" class="headerlink" title="Run server"></a>Run server</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">$ hexo server</div></pre></td></tr></table></figure>
-<p>More info: <a href="https://hexo.io/docs/server.html">Server</a></p>
-          <div class="post-more-link text-center">
-            <a class="btn" href="/2017/01/03/hello-world/#more" rel="contents">
-              阅读全文 &raquo;
-            </a>
-          </div>
-        
+    </ul>
+    <div class="ds-share-icons-more">
+    </div>
+  </div>
+</div>
       
     </div>
-
-    <div>
-      
-    </div>
-
-    <div>
-      
-    </div>
-
-    <footer class="post-footer">
-      
-
-      
-
-      
-      
-        <div class="post-eof"></div>
-      
-    </footer>
-  </article>
-
-
-    
-  </section>
-
-  
+  </div>
 
 
           </div>
@@ -741,6 +447,14 @@
 
 
           
+  <div class="comments" id="comments">
+    
+      <div class="ds-thread" data-thread-key="2018/04/28/Python爬取NBA2017-2018赛季数据实战/"
+           data-title="Python爬取NBA2017-2018赛季数据实战" data-url="https://happydong.github.io/2018/04/28/Python爬取NBA2017-2018赛季数据实战/">
+      </div>
+    
+  </div>
+
 
         </div>
         
@@ -760,8 +474,17 @@
       
 
       
+        <ul class="sidebar-nav motion-element">
+          <li class="sidebar-nav-toc sidebar-nav-active" data-target="post-toc-wrap" >
+            文章目录
+          </li>
+          <li class="sidebar-nav-overview" data-target="site-overview">
+            站点概览
+          </li>
+        </ul>
+      
 
-      <section class="site-overview sidebar-panel  sidebar-panel-active ">
+      <section class="site-overview sidebar-panel ">
         <div class="site-author motion-element" itemprop="author" itemscope itemtype="http://schema.org/Person">
           <img class="site-author-image" itemprop="image"
                src="/images/avatar.png"
@@ -822,6 +545,17 @@
 
       </section>
 
+      
+        <section class="post-toc-wrap motion-element sidebar-panel sidebar-panel-active">
+          <div class="post-toc">
+            
+              
+            
+            
+              <div class="post-toc-content"><ol class="nav"><li class="nav-item nav-level-4"><a class="nav-link" href="#爬取目标："><span class="nav-number">1.</span> <span class="nav-text">爬取目标：</span></a><ol class="nav-child"><li class="nav-item nav-level-5"><a class="nav-link" href="#目标站：http-china-nba-com"><span class="nav-number">1.1.</span> <span class="nav-text">目标站：http://china.nba.com</span></a><ol class="nav-child"><li class="nav-item nav-level-6"><a class="nav-link" href="#难点："><span class="nav-number">1.1.1.</span> <span class="nav-text">难点：</span></a></li></ol></li><li class="nav-item nav-level-5"><a class="nav-link" href="#缺点："><span class="nav-number">1.2.</span> <span class="nav-text">缺点：</span></a><ol class="nav-child"><li class="nav-item nav-level-6"><a class="nav-link" href="#以下代码仅是学习参考，请勿用作其它非法用途。"><span class="nav-number">1.2.1.</span> <span class="nav-text">以下代码仅是学习参考，请勿用作其它非法用途。</span></a></li></ol></li></ol></li></ol></div>
+            
+          </div>
+        </section>
       
 
     </div>
@@ -925,6 +659,10 @@
 
 
   
+  <script type="text/javascript" src="/js/src/scrollspy.js?v=5.0.1"></script>
+<script type="text/javascript" src="/js/src/post-details.js?v=5.0.1"></script>
+
+
 
   
 
