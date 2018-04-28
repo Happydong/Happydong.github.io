@@ -332,14 +332,16 @@
 
       
         
-          <h4 id="爬取目标："><a href="#爬取目标：" class="headerlink" title="爬取目标："></a>爬取目标：</h4><ul>
+          <h4 id="爬取目标"><a href="#爬取目标" class="headerlink" title="爬取目标"></a>爬取目标</h4><ul>
 <li>爬取NBA2017-2018赛季 球队的球赛数据</li>
 <li>并保存到.csv 文件中</li>
-<li>目标站：<a href="http://china.nba.com">http://china.nba.com</a><h4 id="难点："><a href="#难点：" class="headerlink" title="难点："></a>难点：</h4></li>
-<li>经分析得知，要获取的数据是动态生产的，经过抓包得到目标链接的组成方式为：targe<em>url = “<a href="http://china.nba.com/static/data/team/schedule">http://china.nba.com/static/data/team/schedule</a></em>“+box_name+”.json” </li>
+<li>目标站：<a href="http://china.nba.com">http://china.nba.com</a></li>
+</ul>
+<h4 id="难点"><a href="#难点" class="headerlink" title="难点"></a>难点</h4><ul>
+<li>经分析得知，要获取的数据是动态生产的，经过抓包得到目标链接的组成方式为：<br>targe<em>url = “<a href="http://china.nba.com/static/data/team/schedule">http://china.nba.com/static/data/team/schedule</a></em>“+box_name+”.json” </li>
 <li>json格式数据提取的层级分析</li>
 </ul>
-<h4 id="缺点："><a href="#缺点：" class="headerlink" title="缺点："></a>缺点：</h4><ul>
+<h4 id="缺点"><a href="#缺点" class="headerlink" title="缺点"></a>缺点</h4><ul>
 <li>对比赛时间部分，分析不足，只是给出了具体年月，没有日期和具体几点</li>
 <li>代码方面优化不足      </li>
 </ul>
