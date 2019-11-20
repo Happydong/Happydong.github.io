@@ -68,7 +68,7 @@
 <link href="/css/main.css?v=5.0.1" rel="stylesheet" type="text/css">
 
 
-  <meta name="keywords" content="Hexo, NexT">
+  <meta name="keywords" content="mac,linux,ssh,">
 
 
 
@@ -84,16 +84,18 @@
 
 
 
-<meta name="description" content="时间如梭，岁月如水，美好的就是当下！">
-<meta property="og:type" content="website">
-<meta property="og:title" content="Happydong&#39;s Blog">
-<meta property="og:url" content="https://happydong.github.io/archives/2017/index.html">
+<meta name="description" content="ssh连接服务器报错错误信息提示/etc/ssh/ssh_config/: line 50: Bad configuration option: serveraliveinterval30 /etc处理办法vim /etc/ssh/ssh_config 文件 注释掉响应的提示行参数，退出终端，重新进入即可">
+<meta name="keywords" content="mac,linux,ssh">
+<meta property="og:type" content="article">
+<meta property="og:title" content="Mac终端连接linux服务器问题整理">
+<meta property="og:url" content="https://happydong.github.io/2019/11/20/Mac终端连接linux服务器问题整理/index.html">
 <meta property="og:site_name" content="Happydong&#39;s Blog">
-<meta property="og:description" content="时间如梭，岁月如水，美好的就是当下！">
+<meta property="og:description" content="ssh连接服务器报错错误信息提示/etc/ssh/ssh_config/: line 50: Bad configuration option: serveraliveinterval30 /etc处理办法vim /etc/ssh/ssh_config 文件 注释掉响应的提示行参数，退出终端，重新进入即可">
 <meta property="og:locale" content="zh-Hans">
+<meta property="og:updated_time" content="2019-11-20T03:35:50.284Z">
 <meta name="twitter:card" content="summary">
-<meta name="twitter:title" content="Happydong&#39;s Blog">
-<meta name="twitter:description" content="时间如梭，岁月如水，美好的就是当下！">
+<meta name="twitter:title" content="Mac终端连接linux服务器问题整理">
+<meta name="twitter:description" content="ssh连接服务器报错错误信息提示/etc/ssh/ssh_config/: line 50: Bad configuration option: serveraliveinterval30 /etc处理办法vim /etc/ssh/ssh_config 文件 注释掉响应的提示行参数，退出终端，重新进入即可">
 
 
 
@@ -111,7 +113,7 @@
   };
 </script>
 
-  <title> 归档 | Happydong's Blog </title>
+  <title> Mac终端连接linux服务器问题整理 | Happydong's Blog </title>
 </head>
 
 <body itemscope itemtype="http://schema.org/WebPage" lang="zh-Hans">
@@ -142,7 +144,7 @@
     
   
 
-  <div class="container one-collumn sidebar-position-left  page-archive  ">
+  <div class="container one-collumn sidebar-position-left page-post-detail ">
     <div class="headband"></div>
 
     <header id="header" class="header" itemscope itemtype="http://schema.org/WPHeader">
@@ -240,134 +242,183 @@
           <div id="content" class="content">
             
 
-  <section id="posts" class="posts-collapse">
-    <span class="archive-move-on"></span>
-
-    <span class="archive-page-counter">
-      
-      
-      
-        
-      
-      嗯..! 目前共计 6 篇日志。 继续努力。
-    </span>
-
+  <div id="posts" class="posts-expand">
     
-
-      
-      
-      
-
-      
-        
-        <div class="collection-title">
-          <h2 class="archive-year motion-element" id="archive-year-2017">2017</h2>
-        </div>
-      
-      
-
-      
-
-  <article class="post post-type-normal" itemscope itemtype="http://schema.org/Article">
-    <header class="post-header">
-
-      <h1 class="post-title">
-        
-            <a class="post-title-link" href="/2017/08/17/高效学习方法/" itemprop="url">
-              
-                <span itemprop="name">高效学习方法</span>
-              
-            </a>
-        
-      </h1>
-
-      <div class="post-meta">
-        <time class="post-time" itemprop="dateCreated" datetime="2017-08-17T14:35:39+08:00" content="2017-08-17">
-          08-17
-        </time>
-      </div>
-
-    </header>
-  </article>
-
-
-
-    
-
-      
-      
-      
-
-      
-      
-
-      
-
-  <article class="post post-type-normal" itemscope itemtype="http://schema.org/Article">
-    <header class="post-header">
-
-      <h1 class="post-title">
-        
-            <a class="post-title-link" href="/2017/01/04/我的Blog诞生记/" itemprop="url">
-              
-                <span itemprop="name">我的Blog诞生记</span>
-              
-            </a>
-        
-      </h1>
-
-      <div class="post-meta">
-        <time class="post-time" itemprop="dateCreated" datetime="2017-01-04T12:16:36+08:00" content="2017-01-04">
-          01-04
-        </time>
-      </div>
-
-    </header>
-  </article>
-
-
-
-    
-
-      
-      
-      
-
-      
-      
-
-      
-
-  <article class="post post-type-normal" itemscope itemtype="http://schema.org/Article">
-    <header class="post-header">
-
-      <h1 class="post-title">
-        
-            <a class="post-title-link" href="/2017/01/03/hello-world/" itemprop="url">
-              
-                <span itemprop="name">Hello World</span>
-              
-            </a>
-        
-      </h1>
-
-      <div class="post-meta">
-        <time class="post-time" itemprop="dateCreated" datetime="2017-01-03T17:48:33+08:00" content="2017-01-03">
-          01-03
-        </time>
-      </div>
-
-    </header>
-  </article>
-
-
-
-    
-
-  </section>
 
   
+  
 
+  
+  
+  
+
+  <article class="post post-type-normal " itemscope itemtype="http://schema.org/Article">
+
+    
+      <header class="post-header">
+
+        
+        
+          <h1 class="post-title" itemprop="name headline">
+            
+            
+              
+                Mac终端连接linux服务器问题整理
+              
+            
+          </h1>
+        
+
+        <div class="post-meta">
+          <span class="post-time">
+            <span class="post-meta-item-icon">
+              <i class="fa fa-calendar-o"></i>
+            </span>
+            <span class="post-meta-item-text">发表于</span>
+            <time itemprop="dateCreated" datetime="2019-11-20T11:31:15+08:00" content="2019-11-20">
+              2019-11-20
+            </time>
+          </span>
+
+          
+            <span class="post-category">
+              &nbsp; | &nbsp;
+              <span class="post-meta-item-icon">
+                <i class="fa fa-folder-o"></i>
+              </span>
+              <span class="post-meta-item-text">分类于</span>
+              
+                <span itemprop="about" itemscope itemtype="https://schema.org/Thing">
+                  <a href="/categories/Linux/" itemprop="url" rel="index">
+                    <span itemprop="name">Linux</span>
+                  </a>
+                </span>
+
+                
+                
+
+              
+            </span>
+          
+
+          
+            
+              <span class="post-comments-count">
+                &nbsp; | &nbsp;
+                <a href="/2019/11/20/Mac终端连接linux服务器问题整理/#comments" itemprop="discussionUrl">
+                  <span class="post-comments-count ds-thread-count" data-thread-key="2019/11/20/Mac终端连接linux服务器问题整理/" itemprop="commentsCount"></span>
+                </a>
+              </span>
+            
+          
+
+          
+
+          
+          
+
+          
+        </div>
+      </header>
+    
+
+
+    <div class="post-body" itemprop="articleBody">
+
+      
+      
+
+      
+        <h4 id="ssh连接服务器报错"><a href="#ssh连接服务器报错" class="headerlink" title="ssh连接服务器报错"></a>ssh连接服务器报错</h4><p>错误信息提示<br>/etc/ssh/ssh_config/: line 50: Bad configuration option: serveraliveinterval30 /etc<br>处理办法<br>vim /etc/ssh/ssh_config 文件 注释掉响应的提示行参数，退出终端，重新进入即可</p>
+<a id="more"></a>
+      
+    </div>
+
+    <div>
+      
+        
+      
+    </div>
+
+    <div>
+      
+        
+  <div style="padding: 10px 0; margin: 20px auto; width: 90%; text-align: center;">
+    <div>坚持原创技术分享，您的支持将鼓励我继续创作！</div>
+    <button id="rewardButton" disable="enable" onclick="var qr = document.getElementById('QR'); if (qr.style.display === 'none') {qr.style.display='block';} else {qr.style.display='none'}">
+      <span>赏</span>
+    </button>
+    <div id="QR" style="display: none;">
+      
+      
+        <div id="alipay" style="display: inline-block">
+          <img id="alipay_qr" src="/images/alipay.png" alt="Happydong Alipay">
+          <p>支付宝打赏</p>
+        </div>
+      
+    </div>
+  </div>
+
+
+      
+    </div>
+
+    <footer class="post-footer">
+      
+        <div class="post-tags">
+          
+            <a href="/tags/mac/" rel="tag">#mac</a>
+          
+            <a href="/tags/linux/" rel="tag">#linux</a>
+          
+            <a href="/tags/ssh/" rel="tag">#ssh</a>
+          
+        </div>
+      
+
+      
+        <div class="post-nav">
+          <div class="post-nav-next post-nav-item">
+            
+              <a href="/2019/11/20/Git配置公钥不用输密码更新代码/" rel="next" title="Git配置公钥不用输密码更新代码">
+                <i class="fa fa-chevron-left"></i> Git配置公钥不用输密码更新代码
+              </a>
+            
+          </div>
+
+          <div class="post-nav-prev post-nav-item">
+            
+          </div>
+        </div>
+      
+
+      
+      
+    </footer>
+  </article>
+
+
+
+    <div class="post-spread">
+      
+        <div class="ds-share flat" data-thread-key="2019/11/20/Mac终端连接linux服务器问题整理/" data-title="Mac终端连接linux服务器问题整理" data-content data-url="https://happydong.github.io/2019/11/20/Mac终端连接linux服务器问题整理/">
+  <div class="ds-share-inline">
+    <ul class="ds-share-icons-16">
+
+      <li data-toggle="ds-share-icons-more"><a class="ds-more" href="javascript:void(0);">分享到：</a></li>
+      <li><a class="ds-weibo" href="javascript:void(0);" data-service="weibo">微博</a></li>
+      <li><a class="ds-qzone" href="javascript:void(0);" data-service="qzone">QQ空间</a></li>
+      <li><a class="ds-qqt" href="javascript:void(0);" data-service="qqt">腾讯微博</a></li>
+      <li><a class="ds-wechat" href="javascript:void(0);" data-service="wechat">微信</a></li>
+
+    </ul>
+    <div class="ds-share-icons-more">
+    </div>
+  </div>
+</div>
+      
+    </div>
+  </div>
 
 
           </div>
@@ -375,6 +426,13 @@
 
 
           
+  <div class="comments" id="comments">
+    
+      <div class="ds-thread" data-thread-key="2019/11/20/Mac终端连接linux服务器问题整理/" data-title="Mac终端连接linux服务器问题整理" data-url="https://happydong.github.io/2019/11/20/Mac终端连接linux服务器问题整理/">
+      </div>
+    
+  </div>
+
 
         </div>
         
@@ -394,8 +452,17 @@
       
 
       
+        <ul class="sidebar-nav motion-element">
+          <li class="sidebar-nav-toc sidebar-nav-active" data-target="post-toc-wrap">
+            文章目录
+          </li>
+          <li class="sidebar-nav-overview" data-target="site-overview">
+            站点概览
+          </li>
+        </ul>
+      
 
-      <section class="site-overview sidebar-panel  sidebar-panel-active ">
+      <section class="site-overview sidebar-panel ">
         <div class="site-author motion-element" itemprop="author" itemscope itemtype="http://schema.org/Person">
           <img class="site-author-image" itemprop="image" src="/images/avatar.png" alt="Happydong">
           <p class="site-author-name" itemprop="name">Happydong</p>
@@ -454,6 +521,17 @@
 
       </section>
 
+      
+        <section class="post-toc-wrap motion-element sidebar-panel sidebar-panel-active">
+          <div class="post-toc">
+            
+              
+            
+            
+              <div class="post-toc-content"><ol class="nav"><li class="nav-item nav-level-4"><a class="nav-link" href="#ssh连接服务器报错"><span class="nav-number">1.</span> <span class="nav-text">ssh连接服务器报错</span></a></li></ol></div>
+            
+          </div>
+        </section>
       
 
     </div>
@@ -557,11 +635,9 @@
 
 
   
-  
-    <script type="text/javascript" id="motion.page.archive">
-      $('.archive-year').velocity('transition.slideLeftIn');
-    </script>
-  
+  <script type="text/javascript" src="/js/src/scrollspy.js?v=5.0.1"></script>
+<script type="text/javascript" src="/js/src/post-details.js?v=5.0.1"></script>
+
 
 
   

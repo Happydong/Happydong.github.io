@@ -264,6 +264,128 @@
             
               
                 
+                <a class="post-title-link" href="/2019/11/20/Mac终端连接linux服务器问题整理/" itemprop="url">
+                  Mac终端连接linux服务器问题整理
+                </a>
+              
+            
+          </h1>
+        
+
+        <div class="post-meta">
+          <span class="post-time">
+            <span class="post-meta-item-icon">
+              <i class="fa fa-calendar-o"></i>
+            </span>
+            <span class="post-meta-item-text">发表于</span>
+            <time itemprop="dateCreated" datetime="2019-11-20T11:31:15+08:00" content="2019-11-20">
+              2019-11-20
+            </time>
+          </span>
+
+          
+            <span class="post-category">
+              &nbsp; | &nbsp;
+              <span class="post-meta-item-icon">
+                <i class="fa fa-folder-o"></i>
+              </span>
+              <span class="post-meta-item-text">分类于</span>
+              
+                <span itemprop="about" itemscope itemtype="https://schema.org/Thing">
+                  <a href="/categories/Linux/" itemprop="url" rel="index">
+                    <span itemprop="name">Linux</span>
+                  </a>
+                </span>
+
+                
+                
+
+              
+            </span>
+          
+
+          
+            
+              <span class="post-comments-count">
+                &nbsp; | &nbsp;
+                <a href="/2019/11/20/Mac终端连接linux服务器问题整理/#comments" itemprop="discussionUrl">
+                  <span class="post-comments-count ds-thread-count" data-thread-key="2019/11/20/Mac终端连接linux服务器问题整理/" itemprop="commentsCount"></span>
+                </a>
+              </span>
+            
+          
+
+          
+
+          
+          
+
+          
+        </div>
+      </header>
+    
+
+
+    <div class="post-body" itemprop="articleBody">
+
+      
+      
+
+      
+        
+          <h4 id="ssh连接服务器报错"><a href="#ssh连接服务器报错" class="headerlink" title="ssh连接服务器报错"></a>ssh连接服务器报错</h4><p>错误信息提示<br>/etc/ssh/ssh_config/: line 50: Bad configuration option: serveraliveinterval30 /etc<br>处理办法<br>vim /etc/ssh/ssh_config 文件 注释掉响应的提示行参数，退出终端，重新进入即可</p>
+          <div class="post-more-link text-center">
+            <a class="btn" href="/2019/11/20/Mac终端连接linux服务器问题整理/#more" rel="contents">
+              阅读全文 &raquo;
+            </a>
+          </div>
+        
+      
+    </div>
+
+    <div>
+      
+    </div>
+
+    <div>
+      
+    </div>
+
+    <footer class="post-footer">
+      
+
+      
+
+      
+      
+        <div class="post-eof"></div>
+      
+    </footer>
+  </article>
+
+
+    
+      
+
+  
+  
+
+  
+  
+  
+
+  <article class="post post-type-normal " itemscope itemtype="http://schema.org/Article">
+
+    
+      <header class="post-header">
+
+        
+        
+          <h1 class="post-title" itemprop="name headline">
+            
+            
+              
+                
                 <a class="post-title-link" href="/2019/11/20/Git配置公钥不用输密码更新代码/" itemprop="url">
                   Git配置公钥不用输密码更新代码
                 </a>
@@ -334,10 +456,10 @@
       
         
           <h4 id="Linux环境配置git-ssh公钥问题"><a href="#Linux环境配置git-ssh公钥问题" class="headerlink" title="Linux环境配置git ssh公钥问题"></a>Linux环境配置git ssh公钥问题</h4><ul>
-<li>git 免密更新代码<br>进入linux环境通过命令生成公钥私钥<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">ssh-keygen -t rsa -C &quot;xxxxx@xxxxx.com&quot;</span><br></pre></td></tr></table></figure>
-
-</li>
+<li>git 免密更新代码<br>进入linux环境通过命令生成公钥私钥</li>
 </ul>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">ssh-keygen -t rsa -C &quot;xxxxx@xxxxx.com&quot;</span><br></pre></td></tr></table></figure>
+
 <p>通过命令会在/root/.ssh/目录下生成公钥文件(id_rsa.pub)和私钥文件(id_rsa)</p>
 <ul>
 <li>如果您之前的是通过<a href="https://git@gitee.com/xxxx@xx.git" target="_blank" rel="noopener">https://git@gitee.com/xxxx@xx.git</a> 获取项目的，现在请更换本项目的.git/config文件中的url 更改为 <a href="mailto:git@gitee.com" target="_blank" rel="noopener">git@gitee.com</a>:xxxx@xx.git 这样就可以免密git pull 和 git push 了<br><img src="https://i.loli.net/2019/11/20/8dxO3EwhDQWVL5b.png" alt="gitconfig.png"></li>
@@ -908,7 +1030,7 @@
         <nav class="site-state motion-element">
           <div class="site-state-item site-state-posts">
             <a href="/archives">
-              <span class="site-state-item-count">5</span>
+              <span class="site-state-item-count">6</span>
               <span class="site-state-item-name">日志</span>
             </a>
           </div>
@@ -916,7 +1038,7 @@
           
             <div class="site-state-item site-state-categories">
               <a href="/categories">
-                <span class="site-state-item-count">4</span>
+                <span class="site-state-item-count">5</span>
                 <span class="site-state-item-name">分类</span>
               </a>
             </div>
@@ -925,7 +1047,7 @@
           
             <div class="site-state-item site-state-tags">
               <a href="/tags">
-                <span class="site-state-item-count">12</span>
+                <span class="site-state-item-count">15</span>
                 <span class="site-state-item-name">标签</span>
               </a>
             </div>
