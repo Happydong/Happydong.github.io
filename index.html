@@ -264,6 +264,107 @@
             
               
                 
+                <a class="post-title-link" href="/2019/12/03/mysql使用/" itemprop="url">
+                  mysql使用
+                </a>
+              
+            
+          </h1>
+        
+
+        <div class="post-meta">
+          <span class="post-time">
+            <span class="post-meta-item-icon">
+              <i class="fa fa-calendar-o"></i>
+            </span>
+            <span class="post-meta-item-text">发表于</span>
+            <time itemprop="dateCreated" datetime="2019-12-03T11:11:13+08:00" content="2019-12-03">
+              2019-12-03
+            </time>
+          </span>
+
+          
+
+          
+            
+          
+
+          
+
+          
+          
+
+          
+        </div>
+      </header>
+    
+
+
+    <div class="post-body" itemprop="articleBody">
+
+      
+      
+
+      
+        
+          <h3 id="mysql5-7的安装文档"><a href="#mysql5-7的安装文档" class="headerlink" title="mysql5.7的安装文档"></a><a href="https://github.com" target="_blank" rel="noopener">mysql5.7的安装文档</a></h3><ol>
+<li><a href="https://dev.mysql.com/downloads/mysql/5.7.html#downloads" target="_blank" rel="noopener">官方下载地址</a></li>
+<li><a href="https://dev.mysql.com/doc/refman/5.7/en/binary-installation.html" target="_blank" rel="noopener">mysql5.7的安装文档</a><br> 安装的主要部分命令<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br></pre></td><td class="code"><pre><span class="line">shell&gt; groupadd mysql</span><br><span class="line">shell&gt; useradd -r -g mysql -s /bin/false mysql</span><br><span class="line">shell&gt; cd /usr/local</span><br><span class="line">shell&gt; tar zxvf /path/to/mysql-VERSION-OS.tar.gz</span><br><span class="line">shell&gt; ln -s full-path-to-mysql-VERSION-OS mysql</span><br><span class="line">shell&gt; cd mysql</span><br><span class="line">shell&gt; mkdir mysql-files</span><br><span class="line">shell&gt; chown mysql:mysql mysql-files</span><br><span class="line">shell&gt; chmod 750 mysql-files</span><br><span class="line">shell&gt; bin/mysqld --initialize --user=mysql</span><br><span class="line">shell&gt; bin/mysql_ssl_rsa_setup</span><br><span class="line">shell&gt; bin/mysqld_safe --user=mysql &amp;</span><br><span class="line"># Next command is optional</span><br><span class="line">shell&gt; cp support-files/mysql.server /etc/init.d/mysql.server</span><br></pre></td></tr></table></figure>
+
+</li>
+</ol>
+          <div class="post-more-link text-center">
+            <a class="btn" href="/2019/12/03/mysql使用/#more" rel="contents">
+              阅读全文 &raquo;
+            </a>
+          </div>
+        
+      
+    </div>
+
+    <div>
+      
+    </div>
+
+    <div>
+      
+    </div>
+
+    <footer class="post-footer">
+      
+
+      
+
+      
+      
+        <div class="post-eof"></div>
+      
+    </footer>
+  </article>
+
+
+    
+      
+
+  
+  
+
+  
+  
+  
+
+  <article class="post post-type-normal " itemscope itemtype="http://schema.org/Article">
+
+    
+      <header class="post-header">
+
+        
+        
+          <h1 class="post-title" itemprop="name headline">
+            
+            
+              
+                
                 <a class="post-title-link" href="/2019/11/20/Mac终端连接linux服务器问题整理/" itemprop="url">
                   Mac终端连接linux服务器问题整理
                 </a>
@@ -988,7 +1089,7 @@
         <nav class="site-state motion-element">
           <div class="site-state-item site-state-posts">
             <a href="/archives">
-              <span class="site-state-item-count">6</span>
+              <span class="site-state-item-count">7</span>
               <span class="site-state-item-name">日志</span>
             </a>
           </div>
@@ -1005,7 +1106,7 @@
           
             <div class="site-state-item site-state-tags">
               <a href="/tags">
-                <span class="site-state-item-count">15</span>
+                <span class="site-state-item-count">16</span>
                 <span class="site-state-item-name">标签</span>
               </a>
             </div>
