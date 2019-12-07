@@ -84,18 +84,18 @@
 
 
 
-<meta name="description" content="mysql5.7的安装文档 官方下载地址 mysql5.7的安装文档 安装的主要部分命令1234567891011121314shell&amp;gt; groupadd mysqlshell&amp;gt; useradd -r -g mysql -s /bin/false mysqlshell&amp;gt; cd /usr/localshell&amp;gt; tar zxvf /path/to/mysql-VERSION">
+<meta name="description" content="mysql5.7的安装 官方下载地址 mysql5.7的安装文档 安装的主要部分命令1234567891011121314shell&amp;gt; groupadd mysqlshell&amp;gt; useradd -r -g mysql -s /bin/false mysqlshell&amp;gt; cd /usr/localshell&amp;gt; tar zxvf /path/to/mysql-VERSION-O">
 <meta name="keywords" content="linux,mysql">
 <meta property="og:type" content="article">
-<meta property="og:title" content="mysql使用">
+<meta property="og:title" content="Mysql使用--问题整理记录">
 <meta property="og:url" content="https://happydong.github.io/2019/12/03/mysql使用/index.html">
 <meta property="og:site_name" content="Happydong&#39;s Blog">
-<meta property="og:description" content="mysql5.7的安装文档 官方下载地址 mysql5.7的安装文档 安装的主要部分命令1234567891011121314shell&amp;gt; groupadd mysqlshell&amp;gt; useradd -r -g mysql -s /bin/false mysqlshell&amp;gt; cd /usr/localshell&amp;gt; tar zxvf /path/to/mysql-VERSION">
+<meta property="og:description" content="mysql5.7的安装 官方下载地址 mysql5.7的安装文档 安装的主要部分命令1234567891011121314shell&amp;gt; groupadd mysqlshell&amp;gt; useradd -r -g mysql -s /bin/false mysqlshell&amp;gt; cd /usr/localshell&amp;gt; tar zxvf /path/to/mysql-VERSION-O">
 <meta property="og:locale" content="zh-Hans">
-<meta property="og:updated_time" content="2019-12-07T07:16:55.367Z">
+<meta property="og:updated_time" content="2019-12-07T07:22:34.475Z">
 <meta name="twitter:card" content="summary">
-<meta name="twitter:title" content="mysql使用">
-<meta name="twitter:description" content="mysql5.7的安装文档 官方下载地址 mysql5.7的安装文档 安装的主要部分命令1234567891011121314shell&amp;gt; groupadd mysqlshell&amp;gt; useradd -r -g mysql -s /bin/false mysqlshell&amp;gt; cd /usr/localshell&amp;gt; tar zxvf /path/to/mysql-VERSION">
+<meta name="twitter:title" content="Mysql使用--问题整理记录">
+<meta name="twitter:description" content="mysql5.7的安装 官方下载地址 mysql5.7的安装文档 安装的主要部分命令1234567891011121314shell&amp;gt; groupadd mysqlshell&amp;gt; useradd -r -g mysql -s /bin/false mysqlshell&amp;gt; cd /usr/localshell&amp;gt; tar zxvf /path/to/mysql-VERSION-O">
 
 
 
@@ -113,7 +113,7 @@
   };
 </script>
 
-  <title> mysql使用 | Happydong's Blog </title>
+  <title> Mysql使用--问题整理记录 | Happydong's Blog </title>
 </head>
 
 <body itemscope itemtype="http://schema.org/WebPage" lang="zh-Hans">
@@ -263,7 +263,7 @@
             
             
               
-                mysql使用
+                Mysql使用--问题整理记录
               
             
           </h1>
@@ -280,6 +280,25 @@
             </time>
           </span>
 
+          
+            <span class="post-category">
+              &nbsp; | &nbsp;
+              <span class="post-meta-item-icon">
+                <i class="fa fa-folder-o"></i>
+              </span>
+              <span class="post-meta-item-text">分类于</span>
+              
+                <span itemprop="about" itemscope itemtype="https://schema.org/Thing">
+                  <a href="/categories/Mysql/" itemprop="url" rel="index">
+                    <span itemprop="name">Mysql</span>
+                  </a>
+                </span>
+
+                
+                
+
+              
+            </span>
           
 
           
@@ -303,7 +322,7 @@
       
 
       
-        <h3 id="mysql5-7的安装文档"><a href="#mysql5-7的安装文档" class="headerlink" title="mysql5.7的安装文档"></a><a href="https://github.com" target="_blank" rel="noopener">mysql5.7的安装文档</a></h3><ol>
+        <h3 id="mysql5-7的安装"><a href="#mysql5-7的安装" class="headerlink" title="mysql5.7的安装"></a>mysql5.7的安装</h3><ol>
 <li><a href="https://dev.mysql.com/downloads/mysql/5.7.html#downloads" target="_blank" rel="noopener">官方下载地址</a></li>
 <li><a href="https://dev.mysql.com/doc/refman/5.7/en/binary-installation.html" target="_blank" rel="noopener">mysql5.7的安装文档</a><br> 安装的主要部分命令<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br></pre></td><td class="code"><pre><span class="line">shell&gt; groupadd mysql</span><br><span class="line">shell&gt; useradd -r -g mysql -s /bin/false mysql</span><br><span class="line">shell&gt; cd /usr/local</span><br><span class="line">shell&gt; tar zxvf /path/to/mysql-VERSION-OS.tar.gz</span><br><span class="line">shell&gt; ln -s full-path-to-mysql-VERSION-OS mysql</span><br><span class="line">shell&gt; cd mysql</span><br><span class="line">shell&gt; mkdir mysql-files</span><br><span class="line">shell&gt; chown mysql:mysql mysql-files</span><br><span class="line">shell&gt; chmod 750 mysql-files</span><br><span class="line">shell&gt; bin/mysqld --initialize --user=mysql</span><br><span class="line">shell&gt; bin/mysql_ssl_rsa_setup</span><br><span class="line">shell&gt; bin/mysqld_safe --user=mysql &amp;</span><br><span class="line"># Next command is optional</span><br><span class="line">shell&gt; cp support-files/mysql.server /etc/init.d/mysql.server</span><br></pre></td></tr></table></figure>
 
@@ -442,7 +461,7 @@
           
             <div class="site-state-item site-state-categories">
               <a href="/categories">
-                <span class="site-state-item-count">5</span>
+                <span class="site-state-item-count">6</span>
                 <span class="site-state-item-name">分类</span>
               </a>
             </div>
@@ -491,7 +510,7 @@
               
             
             
-              <div class="post-toc-content"><ol class="nav"><li class="nav-item nav-level-3"><a class="nav-link" href="#mysql5-7的安装文档"><span class="nav-number">1.</span> <span class="nav-text">mysql5.7的安装文档</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#mysql配置文件的加载顺序"><span class="nav-number">2.</span> <span class="nav-text">mysql配置文件的加载顺序</span></a></li></ol></div>
+              <div class="post-toc-content"><ol class="nav"><li class="nav-item nav-level-3"><a class="nav-link" href="#mysql5-7的安装"><span class="nav-number">1.</span> <span class="nav-text">mysql5.7的安装</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#mysql配置文件的加载顺序"><span class="nav-number">2.</span> <span class="nav-text">mysql配置文件的加载顺序</span></a></li></ol></div>
             
           </div>
         </section>
